@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <script>
+         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+         function openNav() {
+             document.getElementById("mySidenav").style.width = "250px";
+             document.getElementById("main").style.marginLeft = "250px";
+             document.body.style.backgroundColor = "white";
+             }
+             /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+             function closeNav() {
+                 document.getElementById("mySidenav").style.width = "0";
+                 document.getElementById("main").style.marginLeft = "0";
+                 document.body.style.backgroundColor = "white";
+                 }
+            </script>
+          <style>
+               body,html
+               {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                width:100vw;
+                height:100vh;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                 background-size:cover;
+                 }
+          .sidenav 
+          {
+              height: 100%; /* 100% Full-height */
+              width: 0; /* 0 width - change this with JavaScript */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Stay on top */
+              top: 0; /* Stay at the top */
+              left: 0;
+              background-color:#23395d; /* Black*/
+              overflow-x: hidden; /* Disable horizontal scroll */
+              padding-top: 60px; /* Place content 60px from the top */
+              transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+              }
+              /* The navigation menu links */
+              .sidenav a {
+                  padding: 5px 20px 20px 15px;
+                  text-decoration: none;
+                  font-size: 20px;
+                  color:white;
+                  display: block;
+                  transition: 0.3s;
+                  position:relative;
+                  }
+                  /* When you mouse over the navigation links, change their color */
+                  .sidenav a:hover {
+                      color: #f1f1f1;
+                      }
+                      /* Position and style the close button (top right corner) */
+                      .sidenav .closebtn {
+                          position: absolute;
+                          top: 0;
+                          font-size: 36px;
+                          }
+                          
+                          /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+                          #main {
+                              transition: margin-left .5s;
+                              padding: 20px;
+                              }
+                              /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                              @media screen and (max-height: 450px) {
+                                  .sidenav {padding-top: 15px;}
+                                  .sidenav a {font-size: 18px;}
+                                  }
+
+            </style>
+
+    </head>
+    <body>
+        <header>
+             <div id="mySidenav" class="sidenav">
+                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 <a href="homepage.html">Home</a>
+                 <a href="form.html">Place an Order</a>
+                 <a href="Enquiry.html">Our products</a>
+                 <a href="About.html">About</a>
+                </div>
+                <!-- Use any element to open the sidenav -->
+                <span style="font-size:30px; cursor:pointer;" onclick="openNav()">&#9776;</span>
+                <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+                <div id="main">...
+
+                </div>
+
+        </header>
+        <section>
+
+        </section>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

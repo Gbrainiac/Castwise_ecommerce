@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>automatic background image body slider</title>
+        
+        <script>
+           var images = [
+             'url("big.jpg")', 
+             'url("first.jpg")', 
+             'url("third.jpg")'
+             ];
+             var num = 0;
+             setInterval(function() {
+               next()
+               }, 1500);
+               function next() {
+                 num++;
+                 if(num >= images.length) {
+                   num = 0;
+                   }
+                   document.body.style.backgroundImage = images[num];
+                   }
+
+          </script>
+        <style>
+          html, body{
+  height:100%;
+}
+
+body {
+  background: 
+url("big.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+    
+
+
+.icon {
+    font-size: 20em;
+}
+
+.affix {
+    top:0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.affix ~ .container-fluid {
+    position: relative;
+    top: 150px;
+}
+#section1 {padding-top:10px;height:500px;color: #fff; background-color: transparent;}
+#section2 {padding-top:10px;height:500px;color: #fff; background-color: #673ab7;}
+#section3 {padding-top:50px;height:500px;color: #fff; background-color: transparent;}
+#section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#section42 {padding-top:50px;height:500px;color: #fff; background-color: transparent;}
+ /* Slideshow container */
+                                                               @import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	margin-top: -150px;
+  
+  width: 60%;
+  
+  font-size: 2em;
+
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+
+
+          </style>
+        
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <div class="container-fluid" style="background-color:#000;color:#fff;height:200px;">
+          <h1>automatic background image body slider</h1>
+            
+        </div>
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-sm-9">
+                    <div>
+                <h2>title h2</h2>
+                <p>this is a p in div</p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-btc" aria-hidden="true"></i>
+            </div> 
+            
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+          <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="#section1">Section 1</a></li>
+                  <li><a href="#section2">Section 2</a></li>
+                  <li><a href="#section3">Section 3</a></li>
+                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#section41">Section 4-1</a></li>
+                      <li><a href="#section42">Section 4-2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+        <div id="section1" class="container-fluid">
+          <h1>Section 1</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section2" class="container-fluid">
+          <h1>Section 2</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section3" class="container-fluid">
+          <h1>Section 3</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section41" class="container-fluid">
+          <h1>Section 4 Submenu 1</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+        <div id="section42" class="container-fluid">
+          <h1>Section 4 Submenu 2</h1>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </div>
+
+        
+    </body>
+</html>
