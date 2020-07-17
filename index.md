@@ -37,7 +37,6 @@
                 padding: 0;
                 margin: 0;
                 width:100vw;
-                height:100vh;
                  background-image: url("big.jpg");
                  background-color: #cccccc;
                  height:800px;
@@ -131,8 +130,8 @@
          
         <header>
             <div class="module" style=" margin-top:-10px;float:left;">
-                   <img src ="newlogo.jpg.png" alt= "company logo" style="height:625%;width:468.75p%; padding:0; margin-left:312.5%;">
-                   <h1 style="color:#3792cb;font-size:250%;margin-top:-125%;">Castwise farms</h1>
+                   <img src ="newlogo.jpg.png" alt= "company logo" style="height:625%;width:468.75px; padding:0; margin-left:50px;">
+                   <h1 style="color:#3792cb;font-size:250%;margin-top:-20px;">Castwise farms</h1>
            </div>
             <div class="topnav"> 
                 <a href="About.html">ABOUT</a>
@@ -140,7 +139,7 @@
                 <a href="homepage.html">HOME</a>
             </div>
         </header>
-          <div style="margin-top:2500%;">
+          <div style="margin-top:400px;">
           <p class="item-1">This is your last chance. After this, there is no turning back.</p>
           <p class="item-2">You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe.</p>
           <p class="item-3">You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p>
